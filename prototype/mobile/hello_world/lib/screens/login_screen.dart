@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'register_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -28,6 +29,13 @@ class _LoginScreenState extends State<LoginScreen> {
     }
   }
 
+  void _navigateToRegister() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const RegisterScreen()),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,7 +43,7 @@ class _LoginScreenState extends State<LoginScreen> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: const Text('Login'),
       ),
-      body: Padding(
+      body: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),
         child: Form(
           key: _formKey,
@@ -112,6 +120,12 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               
               const SizedBox(height: 16),
+              
+              // Register Link
+              TextButton(
+                onPressed: _navigateToRegister,
+                child: const Text("Don't have an account? Register"),
+              ),
               
               // Forgot Password Link
               TextButton(
