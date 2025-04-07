@@ -1,14 +1,21 @@
-# Flutter Login Demo
+# AI Fitness App
 
-A Flutter application demonstrating a simple login form with email and password fields.
+A modern Flutter application for AI-powered fitness training with a beautiful and intuitive user interface.
 
 ## Features
 
-- Clean and modern UI
-- Email validation
-- Password validation (minimum 6 characters)
-- Form validation feedback
-- Responsive design
+### Authentication
+- Onboarding screens with smooth animations
+- Modern login screen with email and password validation
+- Comprehensive registration form with:
+  - First name and last name
+  - Email validation
+  - Password with visibility toggle
+  - Date of birth picker
+  - Form validation feedback
+- Loading states and animations
+- Error handling and user feedback
+
 
 ## Getting Started
 
@@ -69,16 +76,20 @@ A Flutter application demonstrating a simple login form with email and password 
 
 1. Connect your iOS device via USB
 2. Trust your computer on the iOS device
-3. Open Xcode and set up signing:
+3. Install CocoaPods dependencies:
    ```bash
    cd ios
+   pod install
+   ```
+4. Open Xcode and set up signing:
+   ```bash
    open Runner.xcworkspace
    ```
    - Select the Runner project
    - Choose your team in Signing & Capabilities
    - Update Bundle Identifier if needed
 
-4. Run the application:
+5. Run the application:
    ```bash
    flutter run
    ```
@@ -88,6 +99,20 @@ A Flutter application demonstrating a simple login form with email and password 
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 - [Online documentation](https://docs.flutter.dev/)
+- [Firebase Flutter documentation](https://firebase.google.com/docs/flutter/setup)
+
+## Project Structure
+
+```
+lib/
+├── screens/
+│   ├── onboarding_screen.dart   # Initial app screens with welcome message
+│   ├── login_screen.dart        # User login functionality
+│   ├── register_screen.dart     # New user registration
+│   └── welcome_screen.dart      # Post-authentication welcome screen
+├── main.dart                    # App entry point and configuration
+└── firebase_options.dart        # Firebase configuration
+```
 
 ## Troubleshooting
 
