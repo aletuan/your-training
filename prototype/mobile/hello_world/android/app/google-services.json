@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "48529370548",
+    "project_id": "your-training-app",
+    "storage_bucket": "your-training-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:48529370548:android:1765101f88a465f6f056e1",
+        "android_client_info": {
+          "package_name": "com.example.hello_world"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDenMStIxR7ypqnHA8qfjU_xfSITsaDHM8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

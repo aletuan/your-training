@@ -2,6 +2,33 @@
 
 A modern Flutter application for AI-powered fitness training with a beautiful and intuitive user interface.
 
+## TODO List
+
+### Firebase Integration Tasks
+1. Authentication Implementation
+   - [ ] Set up Firebase Authentication
+   - [ ] Implement email/password sign-in
+   - [ ] Add social authentication (Google, Facebook)
+   - [ ] Create user profile management
+   - [ ] Implement password reset flow
+   - [ ] Add email verification
+
+2. Cloud Firestore Implementation
+   - [ ] Design database structure
+   - [ ] Create user profile collection
+   - [ ] Set up workout plans collection
+   - [ ] Implement exercise tracking
+   - [ ] Add progress tracking
+   - [ ] Set up data validation rules
+
+3. Firebase Storage Implementation
+   - [ ] Set up storage structure
+   - [ ] Implement profile picture upload
+   - [ ] Add workout video storage
+   - [ ] Create progress photo storage
+   - [ ] Implement file management
+   - [ ] Set up storage security rules
+
 ## Features
 
 ### Authentication
